@@ -12,35 +12,42 @@
             max-width: 800px;
             margin: auto;
         }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
         img {
             width: 150px;
+            height: 150px;
             border-radius: 50%;
-            display: block;
-            margin: auto;
         }
-        h1, p {
-            text-align: center;
+        .content {
+            flex: 1;
         }
         .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            text-align: center;
+            margin-top: 20px;
         }
         .social-links a {
             text-decoration: none;
             color: blue;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
-    <img src="your-profile-picture.jpg" alt="Profile Picture">
-    <h1>Welcome to Sajag Kumar's Homepage</h1>
-    <p>I am a researcher working on theoretical aspects of condensed matter physics, focusing on Chern-Simons matter theories and dualities.</p>
+    <div class="container">
+        <img src="sajag.jpeg" alt="Profile Picture">
+        <div class="content">
+            <h1>Welcome to Sajag Kumar's Homepage</h1>
+            <p>I am a researcher working on theoretical aspects of condensed matter physics, focusing on Chern-Simons matter theories and dualities.</p>
+        </div>
+    </div>
     <div class="social-links">
         <a href="https://github.com/sajag-kumar7" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-        <a href="your-cv-link.pdf" target="_blank">CV</a>
+        <a href="cv.pdf" target="_blank">CV</a>
     </div>
 </body>
 </html>
